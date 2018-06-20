@@ -1,0 +1,358 @@
+/*  Author VB, project build based on class modules at Birkbeck University of London, "all right reserved"  */
+
+/* Embed the fonts before anything else */
+
+@font-face {
+    font-family: 'BebasNeue-webfont';
+    src: url('../fonts/BebasNeue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, a, legend, form, fieldset, label {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'BebasNeue-webfont', Verdana, serif;
+}
+
+img {
+	border:none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/* style per default */
+
+
+body {
+    font-family: Verdana, serif;
+    color: #04080b; 
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    color: #016008;
+    font-family: 'BebasNeue-webfont', Verdana, serif;
+}
+
+h2{
+	font-size: 2em;
+	color: #3e3e3e;
+}
+
+h3{
+	font-size: 1.5em;
+	color: #016008;
+}
+
+h4{
+	font-size: 1.5em;
+	color: #3e3e3e;
+}
+
+h5{
+	font-size: 1em;
+	color: #3e3e3e;
+}
+
+h6{
+	font-size: 2em;
+    margin-bottom: 0.25em;
+	color: #3e3e3e;
+}
+
+a:link, a:visited {
+    color: #2b4c71;
+}
+
+/* Page styling */
+
+#page {
+    width: 90%;
+    border-left: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
+    margin: 0 auto;
+}
+
+
+/* Link navigation bar style */
+
+#link{
+	text-align: right;
+	float: right;
+}
+
+
+#link li a{
+	font-size: 0.8em;
+	color: #016008;
+    text-decoration: none;
+	font-family: verdana, serif;
+	padding: 1em;
+	
+}
+
+nav li{
+	display:inline;
+}
+
+#link nav li{
+	text-decoration: none;
+	margin-right: 1.5em;
+	list-style: none;
+}
+
+/* Pageheader styling */
+
+#pageheader {
+	display: inline;
+    overflow: hidden;
+    padding: 1%;
+}
+
+#pageheader h1{
+    font-size: 3em;
+    text-shadow: 2px 2px 0 #3e3e3e;
+    margin-left:1%;
+}
+
+#pageheader h1 span{
+	color: #016008;
+	font-size: 1.3em;
+}
+
+#pageheader nav li.mainbar a{
+	background-color: #ffffff;
+}
+
+/* Navigation Primary  styling */
+
+#pageheader nav{
+	float: left;
+    margin: 2.5em 1em 1em 0.5em;
+}
+
+#pageheader nav li {
+    float: left;
+    margin-right: 1em;
+}
+
+#pageheader nav li a {
+    float: left;
+    background-color: #cccccc;
+    color: #000000;
+    display: block;
+    padding: 0.3em 1.25em 0.3em 1.25em;
+	font-size: 1.25em;
+    text-decoration: none;
+    box-shadow: 2px 2px 0 #3e3e3e;	
+    margin-left:4%;
+	border-radius: 2px;
+}
+
+
+
+/* Section Introduction */
+
+#introduction {
+    overflow: hidden;
+    border: 1px solid #cccccc;
+	margin: 10% 1% 1% 1%;
+	padding: 1%;
+}
+
+#introduction img {
+    float: left;
+    border: 1px solid #cccccc;
+	margin: 1% 2% 1% 1%;
+}
+
+#textintro p{
+    font-size: 1em;
+    font-family: Verdana, serif;
+}
+
+#textintro a{
+	font-size: 1em;
+    font-family: Verdana, serif;
+	text-decoration: none;
+	color: #016008;
+}
+
+#textintro h2{
+	margin: 2% 1% 1% 1%;
+}
+
+/* Section Content */
+
+#content {
+    overflow: hidden;
+    border: 1px solid #cccccc;
+	margin: 1%;
+}
+
+#content p {
+    font-family: Verdana, sans-serif;
+	color: #016008;
+	font-size: 0.9em;
+}
+
+#content span{
+	color: #000000;
+	font-weight: bold;
+}
+
+#content a{
+	font-size: 0.9em;
+    font-family: Verdana, serif;
+	text-decoration: underline;
+	color: #016008;
+}
+
+#content h6{
+	margin: 1% 35% 1% 2%;
+	position: absolute;
+}
+
+#content p.name{
+	font-size: 0.8em;
+	float: right; 
+	padding: 1% 3% 3% 1%; 
+	font-style: italic;
+	color: #3e3e3e;
+	margin: 2%;
+}
+
+/* News block styling */
+
+#news{
+	float: left;
+	width: 65%;
+	background-color: #dddddd;
+	margin: 6% 1% 1% 2%;
+}
+
+
+#newshop blockquote {
+	margin-left: 1em;
+	padding-bottom: 0.75em;
+	width: 95%;
+}
+
+.inner{
+	padding: 0.25em;
+}
+
+/* Latest news block styling */
+
+#latestnews{
+	float: right;
+	width: 30%;
+	background-color: #dddddd;
+	margin: 1% 1% 1.5% 1%;
+}
+
+#latestnews p{
+	padding-top: 1.4em;
+}
+
+.innernews{
+	padding: 0.75em;
+}
+
+
+/* Subscribe block styling */
+
+#form{
+	float: right;
+	width: 30%;
+	background-color: #dddddd;
+	margin-right: 1%;
+	margin-bottom: 2%;
+}
+
+#form p{
+	color: #3e3e3e;
+	font-size: 0.9em;
+    font-family: Verdana, serif;
+}
+
+#form h2{
+	margin-bottom: 0.5em;
+}
+
+#form span{
+	color: #ff0000;
+}
+
+.innerform{
+	padding: 1em;
+}
+
+/* Form */
+
+textarea, input, select, option {
+    font-family: Verdana, serif;
+    color: #3e3e3e; 
+    font-size: 1em;
+}
+
+label {
+    font-weight: bold;
+	color: #3e3e3e;
+	font-size: 0.75em;
+    font-family: Verdana, serif;
+    width: 100%;
+    float: left;
+}
+
+form {
+    width: 100%;
+	height: 10em;
+}
+
+fieldset {
+	margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #3e3e3e;
+	background-color: white;
+}
+
+.controlgroup {
+    padding-bottom: 1em;
+    clear: left;
+}
+
+textarea, input[type=text], input[type=email] {
+    width: 100%;
+	
+}
+
+legend {
+    font-family: 'BebasNeue-webfont', Georgia, serif;
+    font-size: 1.5em;
+    color: #3e3e3e;
+}
+
+
+/* Footer section styling */
+
+#pagefooter{
+	clear: both;
+    overflow: hidden;
+    font-size: 0.875em;
+    background-color: #dddddd;
+    color: #cad2db;
+    padding: 1em;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+
+
